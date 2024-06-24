@@ -1,94 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Navegador</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Barra de Navegação -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#navegador">Navegador</a></li>
-                <li><a href="#aplicativo">Aplicativo</a></li>
-                <li><a href="#extensoes">Extensões</a></li>
-                <li><a href="#hospedagem">Hospedagem</a></li>
-                <li><a href="#configuracoes">Configurações</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-    <!-- Seção Inicial -->
-    <section id="inicio">
-        <h1>Bem-vindo ao Meu Navegador!</h1>
-        <p>Aqui você encontra um navegador completo com todas as funcionalidades que você precisa.</p>
-        <p>Escolha uma opção no menu acima para começar.</p>
-        <img src="background.jpg" alt="Foto de Fundo" class="background-image">
-    </section>
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-    <!-- Seção do Navegador -->
-    <section id="navegador">
-        <h2>Navegador</h2>
-        <p>Aqui você pode navegar na web, acessar sites e utilizar tecnologia Flash.</p>
-        <form action="https://exemplo.com/" method="get">
-            <input type="text" name="url" placeholder="Digite a URL ou termo de busca">
-            <button type="submit">Ir</button>
-        </form>
-    </section>
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    <!-- Seção do Aplicativo -->
-    <section id="aplicativo">
-        <h2>Aplicativo</h2>
-        <p>Baixe nosso aplicativo para uma experiência de navegação móvel.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.seuapp" class="download-link">Download para Android</a>
-        <a href="https://apps.apple.com/app/seuapp/id123456789" class="download-link">Download para iOS</a>
-    </section>
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
-    <!-- Seção de Extensões -->
-    <section id="extensoes">
-        <h2>Extensões</h2>
-        <p>Personalize seu navegador com extensões úteis.</p>
-        <ul>
-            <li>Extensão 1</li>
-            <li>Extensão 2</li>
-            <li>Extensão 3</li>
-        </ul>
-    </section>
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-    <!-- Seção de Hospedagem -->
-    <section id="hospedagem">
-        <h2>Hospedagem de Sites</h2>
-        <p>Hospede seu site conosco e tenha acesso a recursos avançados.</p>
-        <p>Planos disponíveis:</p>
-        <ul>
-            <li>Plano Básico</li>
-            <li>Plano Avançado</li>
-            <li>Plano Premium</li>
-        </ul>
-    </section>
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-    <!-- Seção de Configurações -->
-    <section id="configuracoes">
-        <h2>Configurações</h2>
-        <p>Ajuste suas preferências de navegação e mais.</p>
-        <form action="configuracoes.php" method="post">
-            <label for="privacidade">Configurações de Privacidade:</label>
-            <input type="checkbox" id="privacidade" name="privacidade" checked> Permitir cookies
-            <br>
-            <label for="seguranca">Configurações de Segurança:</label>
-            <input type="checkbox" id="seguranca" name="seguranca" checked> Ativar modo de segurança
-            <br><br>
-            <button type="submit">Salvar Configurações</button>
-        </form>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Meu Navegador. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+.background-image {
+    width: 100%;
+   
 
